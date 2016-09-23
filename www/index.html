@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Upload Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/fileupload.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/jquery.blockUI.js"></script>
+        <script type="text/javascript" src="js/fileupload.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="upload-container text-center">
+                    Drag files here
+                    <br />
+                    <label id="upload-size-label"></label>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="upload-results-div"></div>
+            </div>
+        </div>
+        <div id="upload-inputs">
+            <div class="row upload-row-template">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <input type="text" />
+                </div>
+                <div class="col-md-1">
+                    <input type="checkbox" />
+                </div>
+                <div class="col-md-4 filename"></div>
+                <div class="col-md-1 cancel-upload">
+                    <span aria-hidden="true" class="glyphicon glyphicon-remove"></span>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </body>
+</html>
