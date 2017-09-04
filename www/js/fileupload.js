@@ -7,6 +7,7 @@ _files = [];
 _maxUploadSize = Number.MAX_VALUE;
 _currentUploadSize = 0;
 _estimatedMetadataSize = 0;
+_uploadUrl = "";
 
 function updateCurrentUploadSize() {
     if (_files.length > 0) {
@@ -34,6 +35,9 @@ $(document).ready(function () {
         // the id is the name and 32 is for the value
         _estimatedMetadataSize += (inputs[i].id.length + 32);
     }
+	
+	// set the upload Url
+	_uploadUrl = $("#FileUpload").attr("action");
 
     $(".datepicker").datepicker();
 
@@ -252,7 +256,7 @@ function uploadFiles() {
         var json = JSON.stringify(formData);
 
         requests.push($.ajax({
-            url: 'Images.aspx/UploadFiles',
+            url: _uploadUrl,
             type: 'POST',
             data: json,
             dataType: 'json',

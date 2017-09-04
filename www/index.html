@@ -1,19 +1,20 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-    <head>
-        <title>Upload Demo</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
-        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="css/fileupload.css" rel="stylesheet" type="text/css" />
-        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/jquery-ui.js"></script>
-        <script type="text/javascript" src="js/jquery.blockUI.js"></script>
-        <script type="text/javascript" src="js/fileupload.js"></script>
-    </head>
-    <body>
+<head>
+    <title>Upload Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fileupload.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="js/fileupload.js"></script>
+</head>
+<body>
+    <form id="FileUpload" action="UploadFiles">
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
@@ -46,5 +47,11 @@
                 <div class="col-md-1"></div>
             </div>
         </div>
-    </body>
+        <div class="row">
+            <div class="col-md-12">
+                <span aria-hidden="true" class="upload-submit-button glyphicon glyphicon-upload"></span>
+            </div>
+        </div>
+    </form>
+</body>
 </html>
